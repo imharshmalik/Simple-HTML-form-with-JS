@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Form</h1>
+      <form id="myform">
+        <div class="textFields">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Enter your name" id="name" />
+
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            id="email"
+            required
+          />
+          <label for="about">About Yourself:</label>
+          <textarea
+            placeholder="Say something about yourself"
+            id="about"
+            name="about"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="dropdown">
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="none" selected>-- Select a country --</option>
+            <option value="india">India</option>
+            <option value="japan">Japan</option>
+            <option value="australia">Australia</option>
+          </select>
+        </div>
+
+        <div class="radioButton">
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <div class="birthday">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" />
+        </div>
+
+        <div class="fileUploadContainer">
+          <label for="file">Upload File:</label>
+          <input type="file" id="file" name="file" />
+        </div>
+
+        <div class="checkboxContainer">
+          <input type="checkbox" id="agree" />
+          <label for="agree">I agree to the terms and conditions</label>
+        </div>
+
+        <div class="buttonContainer">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="message">
+        <p id="message"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
